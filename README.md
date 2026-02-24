@@ -1,15 +1,17 @@
-# QA Enhancement Repository
+# QA External Rulebooks
 
-This repo hosts QA instruction sets used by internal Co-Pilot agents.
+This repo hosts external QA rulebooks used by Copilot/agents.
 
-## Instruction Sets
-- [QA Chat-Only Instructions](./QA_Chatonly.md)
-- [Ticket-Only QA Instructions](./Ticket_Only_QA.md)
+## Structure
+- /rulebooks/chat_only.md
+- /rulebooks/ticket_only.md
+- /rulebooks/shared_definitions.md
+- /rulebooks/scoring_scale.md
+- /rulebooks/output_template.md
+- manifest.json
 
-## Direct Raw Links (for systems that prefer raw text)
-- QA Chat-Only (raw): https://raw.githubusercontent.com/rblackmon/QA/main/QA_Chatonly.md
-- Ticket-Only QA (raw): https://raw.githubusercontent.com/rblackmon/QA/main/Ticket_Only_QA.md
-
-## Notes
-- Files are written in Markdown for readability and versioning.
-- Changes should be committed with clear commit messages (e.g., "Update scoring rubric v1.4.12").
+## Philosophy
+- Never assume evidence
+- Missing info → Manual Verification Required
+- Quote input directly as evidence
+- Score only “Scored” criteria
